@@ -1,0 +1,152 @@
+<html>
+<title>Off The Rock Travels - Travel to France</title>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css" />	
+	<link rel="stylesheet" type="text/css" href="mobile.css" />	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>	
+	<script src="http://www.google.com/jsapi?key=ABQIAAAAlJFc1lrstqhgTl3ZYo38bBQcfCcww1WgMTxEFsdaTsnOXOVOUhTplLhHcmgnaY0u87hQyd-n-kiOqQ"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUg4jGN3V67075EkIfrMCM11l7YkJWND0&signed_in=true&callback=initMap"></script>
+	<script src="package.js"></script>	
+</head>
+
+<body>
+
+	<div class="popup"><div class="popup-close"><i class="fa fa-times"></i></div><span></span></div>
+	<div id="loading"><img src="images/loading.gif" alt="Loading..." /></div>
+
+	<div id="header">
+		<div id="wrapper">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo-white.png" /></a>
+			</div>
+			<div class="contact_info">
+				<div class="address">
+					31 Dorset Street<br />
+					St. John's, NFLD
+				</div>
+				<div class="contact_number">
+					+17095551234
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="wrapper">
+
+		<h1>Book Your Trip</h1>
+
+		<div id="search_booking">
+			<h2>Lookup Existing Booking</h2>
+			<form id="search" action="">
+				<label class="block">
+					<span>Booking Reference</span>
+					<input type="text" name="reference" id="reference" maxlength="6" />
+					<input type="submit" value="Get Booking Info">
+				</label>
+			</form>
+			<div id="trip_info"></div>
+		</div>
+
+		<form id="book_trip" action="">
+			<div class="booking_col">
+				<h2>Book Session</h2>
+				<p>Please select a destination you wish to travel to.</p>
+
+				<label class="block">
+					<span>Destination</span>
+					<select id="destination_listing" name="destination">
+						<option value="" disabled selected />Select Destination</option>
+						<option value="France" />France</option>
+						<option value="Peru" />Peru</option>
+						<option value="Cuba" />Cuba</option>
+					</select>
+				</label>
+				<br />
+				<label class="block">
+					<span>Select a Date</span>
+					<select id="date_listing" name="date">
+					</select>
+				</label>
+				<br />
+				<label class="block">
+					<span>Select a Time</span>
+					<select id="time_listing" name="time">
+					</select>
+				</label>
+			</div>
+
+			<div class="booking_col">
+				<h2>Travel Information</h2>
+				<p>Please provide us with some travel information.</p>
+				<label class="block">
+					<span>First Name</span>
+					<input type="text" name="firstName" id="firstName" />
+				</label>
+				<br />
+				<label class="block">
+					<span>Last Name</span>
+					<input type="text" name="lastName" id="lastName" />
+				</label>
+				<br />
+				<label class="block">
+					<span>Number of Travellers</span>
+					<select id="party_size">
+						<option value="1" />1</option>
+						<option value="2" />2</option>
+						<option value="3" />3</option>
+						<option value="4" />4</option>
+						<option value="5" />5</option>
+						<option value="6" />6</option>
+					</select>
+				</label>
+			</div>
+
+			<div class="booking_col">
+				<h2>Payment Method</h2>
+				<p>Please provide us with your payment information.</p>
+				<label class="block">
+					<span>Credit Card</span>
+					<select id="num_travellers">
+						<option value="1" />VISA</option>
+						<option value="2" />Mastercard</option>
+						<option value="3" />American Express</option>
+					</select>
+				</label>
+				<br />
+				<label class="block">
+					<span>Credit Card Number (16-digit)</span>
+					<input type="text" maxlength="16" />
+				</label>
+				<br />
+				<label class="block">
+					<span>Cardholder Name</span>
+					<input type="text" />
+				</label>
+				<br />
+				<label class="block">
+					<span>Security Code (3-Digit)</span>
+					<input type="text" maxlength="3" />
+				</label>
+				<br />
+				<input type="submit" value="Book Trip" />
+			</div>
+		</form>
+
+		<br class="clear" />
+
+	</div>
+
+	<br class="clear" />
+	
+	<div id="footer">
+		<div id="wrapper">
+			<strong>OffTheRockTravels &copy; 2015</strong><br />
+			<a href="mailto:contact@offtherocktravels.com" target="_top">contact@offtherocktravels.com</a>
+		</div>
+	</div>
+
+</body>
+</html>

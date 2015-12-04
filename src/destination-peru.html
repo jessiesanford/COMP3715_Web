@@ -1,0 +1,166 @@
+<html>
+<title>Off The Rock Travels - Travel to Peru</title>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css" />	
+	<link rel="stylesheet" type="text/css" href="mobile.css" />	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>	
+	<script src="http://www.google.com/jsapi?key=ABQIAAAAlJFc1lrstqhgTl3ZYo38bBQcfCcww1WgMTxEFsdaTsnOXOVOUhTplLhHcmgnaY0u87hQyd-n-kiOqQ"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUg4jGN3V67075EkIfrMCM11l7YkJWND0&signed_in=true&callback=initMap"></script>
+	<script src="package.js"></script>	
+</head>
+
+<body>
+
+	<div class="popup"><div class="popup-close"><i class="fa fa-times"></i></div><span></span></div>
+	<div id="loading"><img src="images/loading.gif" alt="Loading..." /></div>
+
+	<div id="header">
+		<div id="wrapper">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo-white.png" /></a>
+			</div>
+			<div class="contact_info">
+				<div class="address">
+					31 Dorset Street<br />
+					St. John's, NFLD
+				</div>
+				<div class="contact_number">
+					+17095551234
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="wrapper">
+
+		<div id="itinery_header">
+			<h1 id="itinery_title">Itinery for Peru</h1>
+			<div id="itinery_gallery">
+				<a class="thumbnail_gallery" href="images/peru1.jpg" target="_blank"><img src="images/peru1.jpg" alt="" /></a>
+				<a class="thumbnail_gallery" href="images/peru2.jpg" target="_blank"><img src="images/peru2.jpg" alt="" /></a>
+				<a class="thumbnail_gallery" href="images/peru3.jpg" target="_blank"><img src="images/peru3.jpg" alt="" /></a>
+			</div>
+		</div>
+
+		<br />
+
+		<div id="itinery_dates">
+			<h2>Avaliable Dates</h2>
+			<div>
+				<p>
+					Oct 11th 2015 - Oct 16th 2015
+				</p>
+				<a class="button" href="booking.html">Book Now</a>
+			</div>
+			<hr />
+			<div>
+				<p>
+					Oct 21th 2015 - Oct 26st 2015
+				</p>
+				<a class="button" href="booking.html">Book Now</a>
+			</div>
+			<hr />
+			<div>
+				<p>
+					Nov 1st 2015 - Nov 6th 2015
+				</p>
+				<a class="button" href="booking.html">Book Now</a>
+			</div>
+		</div>
+
+		<div id="itinery_content">
+
+		   	<h2>Trip Summery</h2>
+			<p>
+				If you have not been to South America, you must go! Peru has a great history, beautiful (and diverse) geography and friendly people. Classic tourist attractions here include the magnificent Machu Pichu and the metropolis of Lima. 
+			</p>
+
+			<hr />
+
+		 	<h2>Program</h2>
+		 	<ul>
+				<li>Day 1: Tour of metro Lima, and the museums</li>
+				<li>Day 2: Tour of the historical district and some great museums</li>
+				<li>Day 3: A ride out to the Cuzco region, then to Machu Pichu and the surrounding mountains, and a place to stay in Cuzco by night</li>
+				<li>Day 4: A zip lining adventure in the mountains, and a traditional guinea pig roast</li>
+			</ul>
+
+			<hr />
+
+		   	<h2>Inclusions</h2>
+		   	<ul>
+		   		<li>Flight YHZ - LIM</li>
+		   		<li>Drive From/To Airport</li>
+		   		<li>Hotel/Lodging</li>
+		   	</ul>
+
+		   	<hr />
+
+		   	<h2>Exclusions</h2>
+		   	<ul>
+		   		<li>Food/Beverage</li>
+		   	</ul>
+		</div>
+
+		<br />
+
+		<div id="itinery_footer">
+	   		<h2>Reviews</h2>
+			<ul id="reviews" data="peru">
+			</ul>
+			<br />
+			<h2>Post Review</h2>
+			<form action="post" id="post_reply">
+				<label class="inblock">
+					<span>Post As:</span>
+					<select id="user_identity">
+						<option value="Traveller" />Traveller</option>
+						<option value="Hotel Manager" />Hotel Manager</option>
+					</select>
+				</label>
+				<label class="inblock">
+					<span>Name:</span>
+					<input type="text" id="user_name" />
+				</label>
+				<label class="inblock" id="posts_listing">
+					<span>Reply To:</span>
+					<select>
+					</select>
+				</label>
+				<label class="inblock" id="rating_value">
+					<span>Rating:</span>
+					<input type="radio" name="rating" value="1">1
+					<input type="radio" name="rating" value="2">2
+					<input type="radio" name="rating" value="3" checked>3
+					<input type="radio" name="rating" value="4">4
+					<input type="radio" name="rating" value="5">5
+				</label>
+				<br />
+				<br />
+				<label>
+					<span>Message:</span>
+					<textarea id="message"></textarea>
+				</label>
+				<br />
+				<br />
+				<input type="submit" value="Post Review" />
+			</form>
+			<br />
+			<h2>Deleted Reviews</h2>
+			<ul id="deleted_reviews">
+			</ul>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div id="wrapper">
+			<strong>OffTheRockTravels &copy; 2015</strong><br />
+			<a href="mailto:contact@offtherocktravels.com" target="_top">contact@offtherocktravels.com</a>
+		</div>
+	</div>
+
+</body>
+</html>

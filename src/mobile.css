@@ -1,0 +1,122 @@
+/* Lower resolution screens / tablets */
+@media only screen and (max-width: 1000px) {
+
+#wrapper {
+	width: 95%;
+}
+
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 600px) {
+
+body {
+	background: #C8F4FF;
+	padding: 0px 10px;
+}
+
+#wrapper {
+	width: 100%;
+}
+
+#header {
+	height: auto;
+	text-align: center;
+}
+
+#footer {
+	background: #000;
+	color: #fff;
+}
+
+.logo {
+	float: none;
+}
+
+.logo img {
+	max-width: 260px;
+}
+
+.contact_info {
+	float: none;
+	margin: auto;
+	text-align: center;
+}
+
+ul.menu {
+	background: #34BF53;
+	text-align: center;
+}
+
+/* index.html mobile styles */
+
+#weekly_offers {
+	float: none;
+	width: auto;
+	text-align: center;
+}
+
+#destination_listing {
+	margin: 20px 0 0 0;
+}
+
+.destination a.thumbnail img {
+	max-height: 100px;
+	margin-bottom: 10px;
+}
+
+.dest_desc {
+	clear: both;
+}
+
+
+/* destinations-location.html mobile styles */
+
+#itinery_header {
+	height: auto;
+}
+
+#itinery_title {
+	float: none;
+	text-align: center;
+}
+
+#itinery_gallery {
+	text-align: center;
+}
+
+a.thumbnail_gallery img {
+	float: none;
+}
+
+#itinery_dates {
+	float: none;
+	width: auto;
+	text-align: center;
+}
+
+#itinery_content {
+	margin: 20px 0 0 0;
+}
+
+.review_left {
+	float: none;
+	margin: 0;
+}
+
+.location {
+	float: none;
+}
+
+.booking_col {
+	width: 100%;
+	float: none;
+	clear: both;
+}
+
+textarea {	
+	min-width: auto;
+	width: 100%;
+}
+
+}

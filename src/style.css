@@ -1,0 +1,378 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+
+.yeah {
+	width:300px; height: 150px;
+}
+
+body {
+	margin: 0;
+	line-height: 1.5;
+	font-family: Open Sans, Arial, Sans-Serif;
+}
+
+a:link,
+a:visited
+{
+	color: #3182B3;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+#wrapper {
+	position: relative;
+	width: 80%;
+	margin: auto;
+}
+
+#header {
+	background: #000;
+	text-align: left;
+	height: 100px;
+	padding: 20px 0px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+#footer {
+	background: #000;
+	margin-top: 20px;
+	padding: 10px;
+	color: #fff;
+	text-align: center;
+}
+
+.logo {
+	float: left;
+}
+
+.contact_info {
+	float: right;
+	padding: 10px 0px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.contact_number {
+	margin-top: 10px;
+}
+
+ul.menu {
+	background: #000;
+	clear: both;
+	list-style: none;
+	padding: 10px;
+	color: #fff;
+	font-weight: bold;
+}
+
+ul.menu li {
+	display: inline;
+	padding: 10px 0px;
+}
+
+ul.menu li a:link, ul.menu li a:visited {
+	color: #fff;
+}
+
+
+/* home.html styles */
+
+#opening {
+	text-align: center;
+}
+
+
+/* destinations.html styles */
+
+#destination_listing {
+	background: #fff;
+	margin-right: 320px;
+	border: 1px solid #e0e0e0;
+}
+
+#weekly_offers {
+	background: #fff;
+	float: right;
+	width: 240px;
+	padding: 20px;
+	border: 1px solid #e0e0e0;
+}
+
+.destination {
+	min-height: 160px;
+	padding: 20px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+a.thumbnail {
+	float: left;
+	margin-right: 40px;
+}
+
+a.thumbnail img {
+	max-height: 160px;	
+}
+
+.offer {
+	padding-top: 10px;
+	border-bottom : 1px solid #e0e0e0;
+}
+
+/* destinations-location.html Styles */
+
+#itinery_header {
+	background: #fff;
+	height: 100px;
+	padding: 20px;
+	border: 1px solid #e0e0e0;
+}
+
+#itinery_title {
+	float: left;
+}
+
+a.thumbnail_gallery img {
+	float: right;
+	max-height: 100px;
+	margin-left: 5px;
+}
+
+
+#itinery_dates {
+	float: left;
+	background: #FFFBC5;
+	width: 240px;
+	padding: 20px;
+}
+
+#itinery_content {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #e0e0e0;
+	margin-left: 300px;
+}
+
+#itinery_footer {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #e0e0e0;
+}
+
+#tempMap {
+	display: none;
+}
+
+#reviews {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#reviews li {
+	padding: 10px 0px;
+	border-top: 1px solid #e0e0e0;
+	clear:both;
+}
+
+.review_left {
+	margin-right: 320px;
+}
+
+.location {
+	float: right;
+	margin-bottom: 10px;
+}
+
+#deleted_reviews {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#deleted_reviews li {
+	padding: 10px 0px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.user_identity {
+	color: #a0a0a0;
+}
+
+#posts_listing {
+	display: none;
+}
+
+li.management_response {
+	padding: 20px !important;
+	border: 2px solid #000 !important;
+}
+
+/* Booking Styles */
+
+#search_booking {
+	background: #fff;
+	display: block;
+	padding: 20px;
+	border: 1px solid #e0e0e0;
+	box-sizing: border-box;
+}
+
+.booking_col {
+	background: #fff;
+	display: inline-block;
+	vertical-align: top;
+	width: 33.1%;
+	padding: 20px;
+	border: 1px solid #e0e0e0;
+	box-sizing: border-box;
+}
+
+/* Global Styles */
+
+blockquote {
+	margin: 10px 0 0 0;
+	padding: 10px;
+	border: 1px solid #e0e0e0;
+	border-left: 5px solid #e0e0e0;
+	font-style: italic;
+	font-size: 14px;
+}
+
+hr {
+	margin: 20px 0px;
+	border: 0;
+	border-top: 1px solid #e0e0e0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+.align_center {
+	text-align: center;
+}
+
+.align_left {
+	text-align: left;
+}
+
+.align_right {
+	text-align: right;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.block {
+	display: block;
+}
+
+.inblock {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+/* font reset */
+input, select, textarea, button {
+	font-family: Open Sans, Arial, Sans-Serif;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+input[type=text]
+{
+	padding: 5px;
+}
+
+input[type=submit],
+a.button {
+	background: #3182B3;
+	padding: 5px 10px;
+	border: 1px solid #3182B3;
+	border-radius: 2px;
+	color: #fff;
+	font-weight: bold;
+}
+
+input[type=submit]:hover,
+a.button:hover
+{
+	background: transparent;
+	color: #3182B3;
+	cursor: pointer;
+}
+
+textarea {
+	min-width: 400px;
+	min-height: 100px;
+	padding: 5px;
+}
+
+select {
+	padding: 5px;
+}
+
+label span {
+	display: block;
+	color: #a0a0a0;
+	font-size: 12px;
+}
+
+
+#debug {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 10px;
+	background: #000;
+	color: #fff;
+}
+
+.popup {
+	position: fixed;
+	z-index: 999;
+	top: 60px;
+	left: 0;
+	right: 0;
+	display: none;
+	width: 400px;
+	margin: 0 auto;
+	padding: 10px;
+	background: #4A983D;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 14px;
+}
+
+.popup-close {
+	float: right;
+	padding: 3px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+}
+
+#loading {
+	position: fixed;
+	z-index: 999;
+	top: 50%;
+	left: 50%;
+	display: none;
+	width: 32px;
+	height: 32px;
+	margin: -52px auto auto -52px;
+	padding: 20px;
+	background: #000;
+	border-radius: 2px;
+	color: #fff;
+}
